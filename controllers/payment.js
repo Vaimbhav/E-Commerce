@@ -94,7 +94,7 @@ exports.verifyPayment = async (req, res) => {
             ...req.body,
         });
 
-        return res.status(200).redirect(`http://localhost:8080/paymentsuccess/${order.id}`);
+        return res.status(200).redirect(`https://ecommerce-b6ia.onrender.com/paymentsuccess/${order.id}`);
 
     } else {
         res.status(400).json({
